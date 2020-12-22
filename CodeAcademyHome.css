@@ -1,0 +1,257 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* NAVBAR_HEADER */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 6px 6px 3px rgba(34, 90, 182, 0.23), 0 0 1px 0 rgba(41, 92, 176, .25);
+}
+
+.nav_links_kris:first-child {
+    font-size: 1.1rem;
+    line-height: 3.5rem;
+}
+
+.nav_links_kris {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.navLinks_margin {
+    margin-left: 3.5rem;
+}
+
+/* MAIN CONTENT - UPISITE */
+.mainContent {
+    background-image: linear-gradient(180deg, white, #e9f4ff);
+    padding-bottom: 5rem;
+    position: absolute;
+    z-index: -9999;
+    top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.upisite {
+    width: 14rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #d6eafd;
+}
+
+.spanNew {
+    border-radius: 15px;
+}
+
+.cena {
+    margin-top: 2rem;
+    margin-bottom: 1px;
+    width: 17rem;
+    line-height: 2rem;
+}
+
+.cena p {
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: #d6eafd;
+}
+
+.appButton2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4rem 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.personLeft {
+    height: 370px;
+    position: static;
+    right: 1;
+}
+
+
+
+.theProcess {
+    margin-top: 7rem;
+}
+
+.processOuterCircle {
+    width: 110px;
+    height: 110px;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    margin-left: 6rem;
+}
+
+.processOuterCircle:first-child,
+.processOuterCircle:nth-child(2) {
+    margin-bottom: 9rem;
+}
+
+.processInnerCircle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+}
+
+.process-item-container {
+    width: 400px;
+}
+
+.process-item-header {
+    margin-top: 16rem;
+    width: 300px;
+}
+
+.process-item-content {
+    font-size: 1rem;
+}
+
+
+@media (max-width:992px) {
+    .main-paragraph {
+        width: 395px;
+    }
+
+    .theProcessContainer {
+        top: 86%;
+    }
+
+    .personRightContainer {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (min-width:992px) {
+    .personLeft {
+        display: none;
+    }
+
+    .personRight {
+        display: block !important;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 7rem;
+    }
+
+    .personRightContainer {
+        margin-bottom: 0;
+    }
+
+    .mainContent {
+        padding-bottom: 0;
+    }
+
+    .main_h4 {
+        font-size: 2rem;
+    }
+
+    .main-paragraph {
+        width: 350px !important;
+    }
+
+    .theProcessContainer {
+        top: 82%;
+    }
+}
+
+@media (min-width:1200px) {
+    .container-fluid {
+        width: 90%;
+        height: 740px;
+    }
+
+    .navbar {
+        background-color: white;
+        box-shadow: none;
+    }
+
+    .nav_links_kris:hover {
+        border-bottom: 1px solid #0181ff !important;
+        padding-bottom: 1px;
+    }
+
+    .nav_links_kris {
+        border: none !important;
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+        margin: 0 0.85rem;
+        text-align: center;
+    }
+
+    .navLinks_margin {
+        margin: 0 auto;
+    }
+
+    .collapse {
+        position: absolute;
+        right: 0;
+    }
+
+    .mainContent {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .main-paragraph {
+        width: 350px !important;
+    }
+
+    .theProcessContainer {
+        top: 78%;
+    }
+}
+
+@media screen and (min-width:1380px) {
+    .cena {
+        margin-top: 1rem;
+        display: flex;
+        width: 600px;
+    }
+
+    .cena p {
+        width: 280px;
+        order: 2;
+    }
+
+    .appButton2 {
+        width: 150px;
+        height: 40px;
+        margin-left: 0px;
+        margin-right: 10px;
+        padding-top: 3px;
+        order: 1;
+    }
+
+    .phoneDisplay {
+        display: block !important;
+    }
+
+    .theProcessContainer {
+        top: 78%;
+    }
+
+    .processOuterCircle {
+        position: absolute;
+        top: 100%;
+        margin-left: 0;
+    }
+
+    .processInnerCircle {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:1480px) {
+    .theProcessContainer {
+        top: 80%;
+    }
+}
