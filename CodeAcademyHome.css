@@ -7,11 +7,13 @@ body {
 .navbar {
     background-color: #fff;
     box-shadow: 0 6px 6px 3px rgba(34, 90, 182, 0.23), 0 0 1px 0 rgba(41, 92, 176, .25);
+    z-index: 9999;
 }
 
 .nav_links_kris:first-child {
     font-size: 1.1rem;
     line-height: 3.5rem;
+    padding-bottom: 1px;
 }
 
 .nav_links_kris {
@@ -20,7 +22,7 @@ body {
 }
 
 .navLinks_margin {
-    margin-left: 3.5rem;
+    margin-left: 3rem;
 }
 
 /* MAIN CONTENT - UPISITE */
@@ -28,7 +30,6 @@ body {
     background-image: linear-gradient(180deg, white, #e9f4ff);
     padding-bottom: 5rem;
     position: absolute;
-    z-index: -9999;
     top: 100px;
     width: 100%;
     height: auto;
@@ -52,10 +53,11 @@ body {
     margin-bottom: 1px;
     width: 17rem;
     line-height: 2rem;
+    position: relative;
+    z-index: 9999;
 }
 
 .cena p {
-    cursor: pointer;
     font-size: 1.1rem;
     background-color: #d6eafd;
 }
@@ -66,15 +68,14 @@ body {
     padding: 0.4rem 0;
     width: 100%;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .personLeft {
-    height: 370px;
+    height: 350px;
     position: static;
     right: 1;
 }
-
-
 
 .theProcess {
     margin-top: 7rem;
@@ -102,6 +103,7 @@ body {
 
 .process-item-container {
     width: 400px;
+    z-index: -9999;
 }
 
 .process-item-header {
@@ -113,6 +115,35 @@ body {
     font-size: 1rem;
 }
 
+.process-details-paragraph {
+    width: 300px;
+    font-size: 1.1rem;
+}
+
+.process-details {
+    position: absolute;
+    top: 120% !important;
+}
+
+.novo .btn {
+    width: 200px;
+    height: 50px;
+    font-size: 1.1rem;
+}
+
+.pdsteps-paragraphs {
+    font-size: 1.1rem;
+}
+
+.process-details-blocks {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.process-details-blocks:focus {
+    font-weight: bold !important;
+    box-shadow: rgba(54, 54, 56, 0.32) 2.5px 4.33px 30px 0px;
+}
 
 @media (max-width:992px) {
     .main-paragraph {
@@ -161,6 +192,18 @@ body {
     .theProcessContainer {
         top: 82%;
     }
+
+    .process-details-paragraph, .pdsteps-paragraphs {
+        font-size: 1.3rem !important;
+    }
+
+    .process-details-paragraph {
+        width: 500px;
+    }
+
+    .process-details-header {
+        font-size: 2.5rem;
+    }
 }
 
 @media (min-width:1200px) {
@@ -208,6 +251,11 @@ body {
     .theProcessContainer {
         top: 78%;
     }
+
+    .cena p, .cena button {
+        cursor: pointer !important;
+        z-index: 9999 !important;
+    }
 }
 
 @media screen and (min-width:1380px) {
@@ -247,6 +295,14 @@ body {
 
     .processInnerCircle {
         position: absolute;
+    }
+
+    .process-details {
+        top: 300% !important;
+    }
+
+    .sideLeftDetalna {
+        width: 200px !important;
     }
 }
 

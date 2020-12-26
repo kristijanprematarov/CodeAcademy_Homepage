@@ -16,7 +16,7 @@
 <body>
     <!-- NAVBAR_HEADER -->
     <div class="container-fluid px-0">
-        <nav class="navbar navbar-expand-xl navbar-light bg-white px-0">
+        <nav class="navbar navbar-expand-xl navbar-light bg-white">
             <a class="navbar-brand mx-auto ml-xl-0 pb-4" href="https://codeacademy.mk/">
                 <img class="mb-n3" src="./images/logo-code-academy.png" alt="" style="height: 24px;">
             </a>
@@ -35,10 +35,10 @@
                         </div>
                     </a>
                     <a class="nav-link text-dark nav_links_kris border-bottom"
-                        href="https://codeacademy.mk/courses"><span class="navLinks_margin">Академии</span>
+                        href="https://codeacademy.mk/lectures"><span class="navLinks_margin">Предавања</span>
                     </a>
                     <a class="nav-link text-dark nav_links_kris border-bottom"
-                        href="https://codeacademy.mk/lectures"><span class="navLinks_margin">Предавања</span>
+                        href="https://codeacademy.mk/courses"><span class="navLinks_margin">Академии</span>
                     </a>
                     <a class="nav-link text-dark nav_links_kris border-bottom" href="https://codeacademy.mk/team"><span
                             class="navLinks_margin">Ментори
@@ -63,14 +63,17 @@
                 </form>
             </div>
         </nav>
+    </div>
 
-        <!-- CONTENT -->
+
+    <!-- CONTENT -->
+    <div class="container-fluid px-0">
         <div class="mainContent px-lg-3" style="box-sizing: border-box;">
             <section class="upisite mx-auto ml-lg-0">
                 <div class="novo mx-2">
-                    <span class="bg-success text-light p-1 spanNew font-weight-bold">НОВО</span> <span
-                        class="text-primary">Уписите се во тек</span> <span class=""><img src="./images/right.png"
-                            alt="" style="height: 11px;"></span>
+                    <span class="bg-success text-light p-1 spanNew font-weight-bold">НОВО</span><span
+                        class="text-primary">Уписите се во тек</span><span class=""><img src="./images/right.png" alt=""
+                            style="height: 11px;"></span>
                 </div>
             </section>
 
@@ -87,7 +90,7 @@
                             најдобрите
                             компании во Македонија
                         </p>
-                        <img class="personLeft" src="./images/person.png" alt="">
+                        <img class="personLeft" src="./images/person1.png" alt="">
                         <div class="cena mx-auto">
                             <p class="text-primary p-1 mb-3 text-center">3600 ден. месечно на 36 рати!</p>
                             <button class="appButton2 btn btn-primary btn-lg px-4" type="submit">Аплицирај</button>
@@ -99,14 +102,7 @@
                 </div>
             </section>
 
-
-
-
-
-
-
-
-
+            <!-- PROCESS CIRCLES -->
             <div class="position-absolute theProcessContainer w-100">
                 <div class="theProcess d-flex flex-column align-items-center mx-auto">
                     <div class="processOuterCircle bg-gray-300 rounded-circle text-center d-flex justify-content-center align-items-center font-weight-bold text-dark"
@@ -118,7 +114,8 @@
                         <div class="process-item-container flex-column font-weight-normal">
                             <div class="process-item-header">
                                 <h4>Научи да кодираш</h4>
-                                <p class="process-item-content">Без никакво претходно познавање, нашите ментори ќе те научат
+                                <p class="process-item-content">Без никакво претходно познавање, нашите ментори ќе те
+                                    научат
                                     да кодираш, чекор по чекор.
                                 </p>
                             </div>
@@ -133,12 +130,14 @@
                         <div class="process-item-container flex-column font-weight-normal">
                             <div class="process-item-header">
                                 <h4>Стекни искуство</h4>
-                                <p class="process-item-content">Како дел од академијата, Code Academy ти обезбедува работна
+                                <p class="process-item-content">Како дел од академијата, Code Academy ти обезбедува
+                                    работна
                                     пракса во ИТ компанија.
                                 </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="processOuterCircle bg-gray-300 rounded-circle text-center d-flex justify-content-center align-items-center font-weight-bold text-dark"
                         style="left: 80%;">
                         <div
@@ -148,25 +147,77 @@
                         <div class="process-item-container flex-column font-weight-normal">
                             <div class="process-item-header">
                                 <h4>Вработи се</h4>
-                                <p class="process-item-content">Code Academy ти нуди помош при вработување и посредување на
+                                <p class="process-item-content">Code Academy ти нуди помош при вработување и посредување
+                                    на
                                     интервјуа за работа.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- PROCESS DETAILS -->
+                <div class="container-fluid process-details d-flex flex-column align-items-center ml-xl-5">
+                    <div
+                        class="novo text-center d-flex flex-column justify-content-center align-items-center justify-content-xl-around text-dark mx-3">
+                        <p class="process-details-paragraph">Запознај се со процесот што ќе те претвори во професионален
+                            програмер</p>
+                        <h4 class="process-details-header font-weight-bold">Многу повеќе од академија</h4>
+                    </div>
+                    <div
+                        class="container-xl d-flex flex-column mt-4 flex-md-row align-items-center justify-content-around flex-wrap w-100">
+                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button">Програма</button>
+                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" onclick="Sertifikacija()" style="max-width: 210px;" type="button">Сертифицирање
+                        </button>
+                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button">Пракса</button>
+                        <button  class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button">Вработување
+                        </button>
+                    </div>
+
+                    <!-- process-details-steps -->
+                    <div class="row mt-5 mx-auto process-details-steps">
+                        <!-- LEFT SIDE -->
+                        <div class="col-11 col-lg-6 mt-lg-5 pt-xl-3">
+                            <div class="row">
+                                <div class="col-1"><span class="right-carrets"><img src="./images/right.png" alt=""
+                                            style="height: 20px;"></span></div>
+                                <div class="col-11">
+                                    <p id="firstProcess" class="w-75 pdsteps-paragraphs">Изучување на Front-End програмирање со HTML и CSS</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><span class="right-carrets"><img src="./images/right.png" alt=""
+                                            style="height: 20px;"></span></div>
+                                <div class="col-11">
+                                    <p id="secondProcess" class="w-75 pdsteps-paragraphs">Изучување на Back-End програмирање</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><span class="right-carrets"><img src="./images/right.png" alt=""
+                                            style="height: 20px;"></span></div>
+                                <div class="col-11">
+                                    <p id="thirdProcess" class="w-75 pdsteps-paragraphs">Изучување на бази и манипулација на податоци</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"><span class="right-carrets"><img src="./images/right.png" alt=""
+                                            style="height: 20px;"></span></div>
+                                <div class="col-11">
+                                    <p id="fourthProcess" class="w-75 pdsteps-paragraphs">Изработка на апликации од типот на Amazon, Skype и Instagram</p>
+                                </div>
+                            </div>
+                            <div class="cena mx-auto pl-5 pl-lg-0 ml-lg-0">
+                                <p class="text-primary p-1 mb-3 text-center sideLeftDetalna">Детална програма</p>
+                                <button class="appButton2 btn btn-primary btn-lg px-4" type="submit">Аплицирај</button>
+                            </div>
+                        </div>
+                        <!-- RIGHTSIDE -->
+                        <div class="col-1 col-lg-4">
+                            <img class="d-none d-lg-block" src="./images/mobile.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -177,6 +228,21 @@
 
     </div>
 
+
+    <script>
+        function Sertifikacija() {
+            document.getElementById("firstProcess").innerHTML = 'Стекнување на сертификат за завршена full-stack академија';
+            document.getElementById("secondProcess").innerHTML = 'Стекнување на дополнителни сертификати од Google';
+            document.getElementById("thirdProcess").innerHTML = 'Полагање на завршен испит';
+            document.getElementById("fourthProcess").innerHTML = 'Дипломска церемонија';
+        }
+        function Praksa() {
+            document.getElementById("firstProcess").innerHTML = 'Стекнување на сертификат за завршена full-stack академија';
+            document.getElementById("secondProcess").innerHTML = 'Стекнување на дополнителни сертификати од Google';
+            document.getElementById("thirdProcess").innerHTML = 'Полагање на завршен испит';
+            document.getElementById("fourthProcess").innerHTML = 'Дипломска церемонија';
+        }
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
