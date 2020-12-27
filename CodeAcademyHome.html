@@ -165,11 +165,11 @@
                     </div>
                     <div
                         class="container-xl d-flex flex-column mt-4 flex-md-row align-items-center justify-content-around flex-wrap w-100">
-                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button">Програма</button>
+                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button" onclick="Programa()">Програма</button>
                         <button class="btn btn-white border btn-lg col-6 process-details-blocks" onclick="Sertifikacija()" style="max-width: 210px;" type="button">Сертифицирање
                         </button>
-                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button">Пракса</button>
-                        <button  class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button">Вработување
+                        <button class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button" onclick="Praksa()">Пракса</button>
+                        <button  class="btn btn-white border btn-lg col-6 process-details-blocks" style="max-width: 210px;" type="button" onclick="Vrabotuvanje()">Вработување
                         </button>
                     </div>
 
@@ -230,6 +230,12 @@
 
 
     <script>
+        function Programa() {
+            document.getElementById("firstProcess").innerHTML = 'Изучување на Front-End програмирање со HTML и CSS';
+            document.getElementById("secondProcess").innerHTML = 'Изучување на Back-End програмирање';
+            document.getElementById("thirdProcess").innerHTML = 'Изучување на бази и манипулација на податоци';
+            document.getElementById("fourthProcess").innerHTML = 'Изработка на апликации од типот на Amazon, Skype и Instagram';
+        }
         function Sertifikacija() {
             document.getElementById("firstProcess").innerHTML = 'Стекнување на сертификат за завршена full-stack академија';
             document.getElementById("secondProcess").innerHTML = 'Стекнување на дополнителни сертификати од Google';
@@ -237,10 +243,16 @@
             document.getElementById("fourthProcess").innerHTML = 'Дипломска церемонија';
         }
         function Praksa() {
-            document.getElementById("firstProcess").innerHTML = 'Стекнување на сертификат за завршена full-stack академија';
-            document.getElementById("secondProcess").innerHTML = 'Стекнување на дополнителни сертификати од Google';
-            document.getElementById("thirdProcess").innerHTML = 'Полагање на завршен испит';
-            document.getElementById("fourthProcess").innerHTML = 'Дипломска церемонија';
+            document.getElementById("firstProcess").innerHTML = 'Вклучена платена пракса во реномирани ИТ компании';
+            document.getElementById("secondProcess").innerHTML = '2 Недели тренинг за вработување';
+            document.getElementById("thirdProcess").innerHTML = 'Стекнување со работно искуство и градење на портфолио со клиенти';
+            document.getElementById("fourthProcess").innerHTML = 'Искуство со работа во тим и изучување на процеси и протокол на работа';
+        }
+        function Vrabotuvanje() {
+            document.getElementById("firstProcess").innerHTML = 'Подготовка на професионално резиме изработено од професионален HR тим';
+            document.getElementById("secondProcess").innerHTML = 'Обука за технички интервјуа за работа';
+            document.getElementById("thirdProcess").innerHTML = 'Посредување на интервјуа за работа во партнерски компании';
+            document.getElementById("fourthProcess").innerHTML = 'Техники за преговарање за плата и услови';
         }
     </script>
 
