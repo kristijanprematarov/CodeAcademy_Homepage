@@ -147,7 +147,7 @@ body {
 
 @media (max-width:992px) {
     .main-paragraph {
-        width: 395px;
+        width: 350px;
     }
 
     .theProcessContainer {
@@ -185,10 +185,6 @@ body {
         font-size: 2rem;
     }
 
-    .main-paragraph {
-        width: 350px !important;
-    }
-
     .theProcessContainer {
         top: 82%;
     }
@@ -198,7 +194,7 @@ body {
     }
 
     .process-details-paragraph {
-        width: 500px;
+        width: 100%;
     }
 
     .process-details-header {
